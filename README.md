@@ -1,5 +1,14 @@
-# GRAMformer
-Official implementation for GRAMformer: Any-Order Modality Interactions\\via Volumetric Multimodal Cross-Attention
+<h2 align="center"> GRAMformer: Any-Order Modality Interactions via Volumetric Multimodal Cross-Attention</a></h2>
+
+<h3 align="center"> Giordano Cicchetti, Eleonora Grassucci, Danilo Comminiello
+</a></h3>
+
+
+
+     
+
+⚠️ This repository is under construction, if you experience any bugs, report them in the issues!
+
 
 Example of Volumetric Multimodal Attention (VMA) for three modalities:
 
@@ -43,5 +52,14 @@ def compute_attention_scores_parallel_gram(query, key_1, key_2, eps=1e-8):
     return -torch.sqrt(torch.clamp(det, min=eps))
 ```
 
-![](att_visualization.png)
+## Cite
+
+```
+@article{cicchetti2026gramformer,
+    title={GRAMformer: Any-Order Modality Interactions via Volumetric Multimodal Cross-Attention},
+    author={Cicchetti, Giordano and Grassucci, Eleonora and Comminiello, Danilo},
+    year={2026},
+    journal={ArXiv preprint},
+}
+```
 
